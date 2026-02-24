@@ -3,45 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>لعبة العنبر | الدرس التفاعلي</title>
+<title>نصر زائف | الدرس التفاعلي</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --g1:#1a7c4f;--g2:#26a86a;--gp:#e8f7f0;
-  --teal:#0d7377;--teal-p:#e0f4f4;
-  --rose:#c0392b;--rose-p:#fdf0ef;
-  --gold:#d4a017;--gold-p:#fdf3d0;
+  --a1:#b84a0c;--a2:#e07b1a;--ap:#fff4e5;--ab:#f5c88a;
+  --teal:#0d7377;--tp:#e0f4f4;
+  --rose:#c0392b;--rp:#fdf0ef;
+  --green:#1a7c4f;--gp:#e8f7f0;
+  --gold:#d4a017;--gdp:#fdf3d0;
   --navy:#1a2e4a;--cream:#fdf9f3;
-  --r:14px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--navy);min-height:100vh}
+body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--navy)}
 
 /* HEADER */
-.hdr{background:linear-gradient(135deg,#0f5c38,#1a7c4f,#0d6b5e);padding:26px 20px 18px;text-align:center;position:relative}
-.hdr::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--g2),var(--gold),var(--teal))}
+.hdr{background:linear-gradient(135deg,#7c1a1a,#b84a0c,#c0580e);padding:26px 20px 18px;text-align:center;position:relative}
+.hdr::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--a2),var(--gold),var(--teal))}
 .hdr h1{font-family:'Amiri',serif;font-size:1.85rem;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.4)}
 .hdr p{color:rgba(255,255,255,.75);font-size:.88rem;margin-top:4px}
-.badge{display:inline-block;background:var(--gold);color:#fff;padding:3px 14px;border-radius:20px;font-size:.78rem;margin-bottom:8px;font-weight:700}
+.badge{display:inline-block;background:var(--a2);color:#fff;padding:3px 14px;border-radius:20px;font-size:.78rem;margin-bottom:8px;font-weight:700}
 
 /* CARD */
 .card{max-width:860px;margin:28px auto 0;background:#fff;border-radius:16px;box-shadow:0 4px 28px rgba(0,0,0,.1);overflow:hidden;padding-bottom:4px}
 
-/* LESSON HERO */
-.hero{padding:22px 28px;display:flex;align-items:center;gap:16px;background:linear-gradient(135deg,#d0f0e0,#eaf9f1)}
+/* HERO */
+.hero{padding:22px 28px;display:flex;align-items:center;gap:16px;background:linear-gradient(135deg,#fde8cc,#fff4e5)}
 .hi{font-size:3.2rem}
 .hn .num{font-size:.78rem;color:#888;display:block;margin-bottom:2px}
-.hn h2{font-family:'Amiri',serif;font-size:1.6rem;color:var(--g1)}
-.nt{display:inline-block;background:var(--g1);color:#fff;padding:3px 12px;border-radius:10px;font-size:.76rem;font-weight:700;margin-top:5px}
+.hn h2{font-family:'Amiri',serif;font-size:1.6rem;color:var(--a1)}
+.nt{display:inline-block;background:var(--a2);color:#fff;padding:3px 12px;border-radius:10px;font-size:.76rem;font-weight:700;margin-top:5px}
 
 /* SECTION */
 .sec{border-top:1px solid #f0f0f0;padding:20px 28px}
 .sh{display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none}
 .sn{width:33px;height:33px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.88rem;flex-shrink:0;color:#fff}
-.sn.g{background:var(--g1)}
+.sn.a{background:var(--a2)}
 .sn.t{background:var(--teal)}
 .sn.r{background:var(--rose)}
 .sn.d{background:var(--gold)}
+.sn.g{background:var(--green)}
 .st{font-size:1.02rem;font-weight:700;flex:1}
 .sg{transition:transform .3s;color:#bbb;font-size:.9rem}
 .sg.open{transform:rotate(180deg)}
@@ -50,115 +51,129 @@ body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--navy);
 @keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 
 /* READ BLOCK */
-.rb{background:#f8fafb;border-radius:12px;padding:16px 18px;margin-bottom:12px;line-height:2.1;font-size:.98rem;border-right:5px solid var(--g1)}
-.pg{display:inline-flex;align-items:center;gap:5px;padding:3px 11px;border-radius:20px;font-size:.76rem;font-weight:700;margin-bottom:9px;background:var(--gp);color:var(--g1);border:1px solid #a8d8c0}
+.rb{background:#fff8f0;border-radius:12px;padding:16px 18px;margin-bottom:12px;line-height:2.1;font-size:.98rem;border-right:5px solid var(--a2)}
+.pg{display:inline-flex;align-items:center;gap:5px;padding:3px 11px;border-radius:20px;font-size:.76rem;font-weight:700;margin-bottom:9px;background:var(--ap);color:var(--a1);border:1px solid var(--ab)}
 .rb ul{padding-right:20px;margin-top:8px}
-.rb ul li{margin-bottom:5px}
+.rb ul li{margin-bottom:6px;line-height:1.9}
+.rb .bullet{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--a2);margin-left:6px;vertical-align:middle}
 
 /* VOCAB */
 .vg{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:10px;margin-top:6px}
-.vc{border-radius:12px;padding:13px;cursor:pointer;transition:all .3s;border:2px solid #b8e0cc;background:var(--gp)}
+.vc{border-radius:12px;padding:13px;cursor:pointer;transition:all .3s;border:2px solid var(--ab);background:var(--ap)}
 .vc:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,.1)}
-.vw{font-family:'Amiri',serif;font-size:1.12rem;font-weight:700;display:block;margin-bottom:4px;color:var(--g1)}
+.vw{font-family:'Amiri',serif;font-size:1.12rem;font-weight:700;display:block;margin-bottom:4px;color:var(--a1)}
 .vm{font-size:.82rem;color:#555;display:none;line-height:1.6}
 .vm.show{display:block;animation:fi .25s}
 .vh{font-size:.7rem;color:#bbb}
 
-/* QUESTION SECTIONS */
-/* ---- أولاً: ثروتي اللغوية ---- */
-.q-section{margin-bottom:18px}
-.q-label{display:inline-flex;align-items:center;gap:7px;padding:6px 16px;border-radius:10px;font-size:.88rem;font-weight:800;margin-bottom:12px;color:#fff}
+/* Q SECTIONS */
+.q-label{display:inline-flex;align-items:center;gap:7px;padding:6px 16px;border-radius:10px;font-size:.88rem;font-weight:800;margin-bottom:14px;color:#fff}
 .q-label.awwal{background:var(--teal)}
 .q-label.thani{background:var(--rose)}
-.q-label.thalith{background:var(--gold);color:#fff}
+.q-label.thalith{background:var(--gold)}
 
-.qbox{background:#f5f7ff;border-radius:12px;padding:16px 18px;margin-bottom:12px;border:1px solid #e4e8f5}
-.qtxt{font-size:.97rem;font-weight:700;margin-bottom:10px;color:var(--navy);line-height:1.7}
-.qnum{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border-radius:50%;font-size:.78rem;margin-left:6px;font-weight:800;vertical-align:middle;background:var(--g1);color:#fff}
-.qnum.t{background:var(--teal)}
-.qnum.r{background:var(--rose)}
-.qnum.d{background:var(--gold)}
+/* QBOX */
+.qbox{background:#f9f5ff;border-radius:12px;padding:16px 18px;margin-bottom:14px;border:1px solid #e8e0f0}
+.qbox.a{background:var(--ap);border-color:var(--ab)}
+.qbox.t{background:var(--tp);border-color:#9ed8d8}
+.qbox.r{background:var(--rp);border-color:#f0b0a8}
+.qbox.d{background:var(--gdp);border-color:#e8c87a}
+.qtxt{font-size:.97rem;font-weight:700;margin-bottom:10px;color:var(--navy);line-height:1.75}
+.qnum{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border-radius:50%;font-size:.78rem;margin-left:6px;font-weight:800;vertical-align:middle}
+.qnum.a{background:var(--a2);color:#fff}
+.qnum.t{background:var(--teal);color:#fff}
+.qnum.r{background:var(--rose);color:#fff}
+.qnum.d{background:var(--gold);color:#fff}
 
-/* MCQ OPTIONS */
+/* MCQ */
 .opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
-.opt{padding:9px 14px;border-radius:9px;border:2px solid #e0e0e0;background:#fff;cursor:pointer;font-size:.92rem;font-family:'Tajawal',sans-serif;text-align:right;transition:all .25s;display:flex;align-items:center;gap:7px}
+.opt{padding:9px 14px;border-radius:9px;border:2px solid #e0e0e0;background:#fff;cursor:pointer;font-size:.9rem;font-family:'Tajawal',sans-serif;text-align:right;transition:all .25s;display:flex;align-items:center;gap:7px}
 .opt:hover{border-color:#aaa;background:#f5f5f5}
-.opt .on{width:20px;height:20px;border-radius:50%;border:2px solid #ccc;flex-shrink:0;transition:all .25s}
-.opt.correct{background:#e8f7f0;border-color:var(--g1);color:var(--g1);font-weight:700}
-.opt.correct .on{background:var(--g1);border-color:var(--g1)}
-.opt.wrong{background:#fdf0ef;border-color:var(--rose);color:var(--rose)}
-.opt.wrong .on{background:var(--rose);border-color:var(--rose)}
+.dot{width:18px;height:18px;border-radius:50%;border:2px solid #ccc;flex-shrink:0;transition:all .25s}
+.opt.correct{background:var(--gp);border-color:var(--green);color:var(--green);font-weight:700}
+.opt.correct .dot{background:var(--green);border-color:var(--green)}
+.opt.wrong{background:var(--rp);border-color:var(--rose);color:var(--rose)}
+.opt.wrong .dot{background:var(--rose);border-color:var(--rose)}
 .opt.dis{pointer-events:none}
 .qfb{margin-top:8px;padding:9px 14px;border-radius:8px;font-size:.88rem;display:none}
-.qfb.ok{display:block;background:#e8f7f0;color:#0e4a30}
-.qfb.no{display:block;background:#fdf0ef;color:var(--rose)}
+.qfb.ok{display:block;background:var(--gp);color:#0e4a30}
+.qfb.no{display:block;background:var(--rp);color:var(--rose)}
 
 /* ANSWER BOX */
-.ans-box{display:none;margin-top:12px;border-radius:10px;padding:13px 16px;font-size:.93rem;line-height:1.9;border-right:4px solid var(--g1);background:#e8f7f0;color:#0e4a30}
-.ans-box.t{border-right-color:var(--teal);background:var(--teal-p);color:#024b4e}
-.ans-box.r{border-right-color:var(--rose);background:var(--rose-p);color:#6b0c06}
-.ans-box.d{border-right-color:var(--gold);background:var(--gold-p);color:#6b4a00}
+.ans-box{display:none;margin-top:12px;border-radius:10px;padding:13px 16px;font-size:.93rem;line-height:1.9}
+.ans-box.a{border-right:4px solid var(--a2);background:var(--ap);color:#6b2800}
+.ans-box.t{border-right:4px solid var(--teal);background:var(--tp);color:#024b4e}
+.ans-box.r{border-right:4px solid var(--rose);background:var(--rp);color:#6b0c06}
+.ans-box.d{border-right:4px solid var(--gold);background:var(--gdp);color:#6b4a00}
 .ans-box.show{display:block;animation:fi .3s}
-.ans-box strong{display:block;font-size:.78rem;margin-bottom:6px;opacity:.65;letter-spacing:.3px}
+.ans-box strong{display:block;font-size:.78rem;margin-bottom:6px;opacity:.65}
 .ans-box ul{padding-right:18px}
 .ans-box ul li{margin-bottom:4px}
 .ans-box table{width:100%;border-collapse:collapse;margin-top:6px;font-size:.88rem}
-.ans-box table th{padding:7px 10px;background:var(--g1);color:#fff;text-align:center}
-.ans-box table.t th{background:var(--teal)}
-.ans-box table td{padding:7px 10px;border:1px solid #cde8d8;background:#fff;text-align:right}
-.ans-box table tr:nth-child(even) td{background:#f2fbf6}
-
-/* HAKEL (highlight) */
-.hakel{background:#fff3cd;border-radius:3px;padding:0 3px;border-bottom:2px dashed var(--gold)}
+.ans-box table th{padding:7px 10px;text-align:center;color:#fff}
+.ans-box.a table th{background:var(--a2)}
+.ans-box.t table th{background:var(--teal)}
+.ans-box.r table th{background:var(--rose)}
+.ans-box table td{padding:7px 10px;border:1px solid #e0d8c0;background:rgba(255,255,255,.7);text-align:right}
+.ans-box table tr:nth-child(even) td{background:rgba(255,255,255,.4)}
 
 /* REVEAL BTN */
-.rbtn{display:inline-flex;align-items:center;gap:6px;padding:7px 17px;border-radius:9px;border:none;cursor:pointer;font-family:'Tajawal',sans-serif;font-size:.88rem;font-weight:700;margin-top:10px;transition:all .3s;background:var(--g1);color:#fff}
-.rbtn.t{background:var(--teal)}
-.rbtn.r{background:var(--rose)}
-.rbtn.d{background:var(--gold)}
+.rbtn{display:inline-flex;align-items:center;gap:6px;padding:7px 17px;border-radius:9px;border:none;cursor:pointer;font-family:'Tajawal',sans-serif;font-size:.88rem;font-weight:700;margin-top:10px;transition:all .3s}
+.rbtn.a{background:var(--a2);color:#fff}
+.rbtn.t{background:var(--teal);color:#fff}
+.rbtn.r{background:var(--rose);color:#fff}
+.rbtn.d{background:var(--gold);color:#fff}
 .rbtn:hover{opacity:.88;transform:translateY(-1px)}
 .rbtn.done{opacity:.55;pointer-events:none}
 
-/* TABL for Q4 */
-.qtbl{width:100%;border-collapse:collapse;margin-top:8px;font-size:.9rem}
-.qtbl th{padding:8px 12px;text-align:center;font-weight:700;background:var(--g1);color:#fff}
-.qtbl.t th{background:var(--teal)}
-.qtbl td{padding:8px 12px;border:1px solid #e0e0e0;background:#fff;text-align:right;vertical-align:top}
-.qtbl tr:nth-child(even) td{background:#f9f9f9}
+/* SPLIT BOXES (أعراض) */
+.split2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.split-box{border-radius:10px;padding:12px 14px;font-size:.9rem;line-height:1.8}
+.split-box.night{background:#1a2e4a;color:#fff}
+.split-box.night strong{color:#ffd580}
+.split-box.day{background:#fff3e0;color:var(--navy)}
+.split-box.day strong{color:var(--a1)}
+.split-title{font-size:.8rem;font-weight:800;display:block;margin-bottom:6px;text-align:center;letter-spacing:.5px}
 
-/* FILL BLANKS */
-.fill-row{display:flex;align-items:center;gap:10px;margin:6px 0;flex-wrap:wrap}
-.fill-inp{border:none;border-bottom:2px solid var(--g1);padding:3px 6px;font-family:'Tajawal',sans-serif;font-size:.95rem;background:transparent;width:140px;text-align:center;outline:none;color:var(--navy)}
-.fill-inp:focus{border-bottom-color:var(--teal)}
+/* SABABNATEEJA TABLE */
+.sntbl{width:100%;border-collapse:collapse;font-size:.9rem;margin-top:8px}
+.sntbl th{padding:8px 12px;text-align:center;font-weight:700;color:#fff}
+.sntbl th:first-child{background:var(--a2)}
+.sntbl th:last-child{background:var(--teal)}
+.sntbl td{padding:8px 12px;border:1px solid #e0e0e0;text-align:right;background:#fff;vertical-align:top}
+.sntbl tr:nth-child(even) td{background:#fafafa}
+.sntbl .filled{background:#e8f7f0;color:#0e4a30;font-weight:600}
+
+/* COMPARE TABLE */
+.cmptbl{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:8px}
+.cmptbl th{padding:8px 10px;text-align:center;font-weight:700;color:#fff}
+.cmptbl th:first-child{background:var(--navy)}
+.cmptbl th:nth-child(2){background:var(--green)}
+.cmptbl th:nth-child(3){background:var(--a2)}
+.cmptbl td{padding:8px 10px;border:1px solid #e0e0e0;text-align:center;background:#fff}
+.cmptbl tr:nth-child(even) td{background:#fafafa}
+.plus{color:var(--green);font-weight:700}
+.minus{color:var(--rose);font-weight:700}
 
 /* CITIZENSHIP */
-.cbox{border-radius:14px;padding:20px;background:linear-gradient(135deg,#d0f0e0,#eaf9f1);border:2px solid #a8d8c0}
-.ctit{font-size:1rem;font-weight:800;display:flex;align-items:center;gap:7px;margin-bottom:14px;color:var(--g1)}
+.cbox{border-radius:14px;padding:20px;background:linear-gradient(135deg,#fde8cc,#fff4e5);border:2px solid var(--ab)}
+.ctit{font-size:1rem;font-weight:800;display:flex;align-items:center;gap:7px;margin-bottom:14px;color:var(--a1)}
 .cp{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px;padding:10px 14px;background:rgba(255,255,255,.65);border-radius:10px}
 .ci{font-size:1.2rem;flex-shrink:0}
 .ct{font-size:.9rem;line-height:1.75}
-.ct strong{display:block;margin-bottom:2px;font-size:.85rem;color:var(--g1)}
-
-/* COMPARE TABLE */
-.cmp-wrap{overflow-x:auto}
-.cmp{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:8px}
-.cmp th{padding:9px 12px;font-weight:700;background:var(--g1);color:#fff;text-align:center;white-space:nowrap}
-.cmp td{padding:9px 12px;border:1px solid #d0e8d8;text-align:center;background:#fff}
-.cmp tr:nth-child(even) td{background:#f0faf5}
-.cmp .plus{color:var(--g1);font-weight:700}
-.cmp .minus{color:var(--rose);font-weight:700}
+.ct strong{display:block;margin-bottom:2px;font-size:.85rem;color:var(--a1)}
 
 /* FOOTER */
 footer{max-width:860px;margin:18px auto 30px;padding:14px 28px;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.ft-name{font-weight:800;color:var(--g1);font-size:.95rem;display:flex;align-items:center;gap:7px}
+.ft-name{font-weight:800;color:var(--a1);font-size:.95rem;display:flex;align-items:center;gap:7px}
 .ft-info{font-size:.82rem;color:#888}
-.ft-logo{font-size:1.6rem}
 
 @media(max-width:560px){
   .hero{flex-direction:column;text-align:center}
   .sec{padding:15px 16px}
   .opts{grid-template-columns:1fr}
   .vg{grid-template-columns:1fr 1fr}
+  .split2{grid-template-columns:1fr}
   footer{flex-direction:column;text-align:center}
 }
 </style>
@@ -167,7 +182,7 @@ footer{max-width:860px;margin:18px auto 30px;padding:14px 28px;background:#fff;b
 
 <div class="hdr">
   <div class="badge">الصف الخامس الأساسي | الفصل الثاني | المحور الخامس</div>
-  <h1>⚽ لُعبةُ العَنْبَرِ</h1>
+  <h1>🎮 نَصْرٌ زَائِفٌ</h1>
   <p>مادة: لغتي الجميلة | درس تفاعلي</p>
 </div>
 
@@ -175,53 +190,60 @@ footer{max-width:860px;margin:18px auto 30px;padding:14px 28px;background:#fff;b
 
   <!-- HERO -->
   <div class="hero">
-    <div class="hi">⚽</div>
+    <div class="hi">🎮</div>
     <div class="hn">
-      <span class="num">الدرس الأول | المحور الخامس: رياضتي وصحّتي</span>
-      <h2>لُعبةُ العَنْبَرِ</h2>
-      <span class="nt">نص سردي توجيهي</span>
+      <span class="num">الدرس الثاني | المحور الخامس: رياضتي وصحّتي</span>
+      <h2>نَصْرٌ زَائِفٌ</h2>
+      <span class="nt">نص سردي قصصي | عن فكرة من مجلة SpaceToon «سبيستون» العدد ٣٨</span>
     </div>
   </div>
 
   <!-- ① قراءة النص -->
   <div class="sec">
     <div class="sh" onclick="tog(this)">
-      <div class="sn g">١</div>
+      <div class="sn a">١</div>
       <span class="st">📖 قراءة النص مع أهداف الفقرات</span>
       <span class="sg open">▼</span>
     </div>
     <div class="sb open">
 
+      <!-- فقرة 1 -->
       <div class="rb">
-        <div class="pg">🎯 الفقرة الأولى — التعريف بالراوي واكتشاف اللعبة</div>
-        <p>وصَلنا القريةَ عصرًا، دخَلنا بيتَ جدّي، وشرَعنا في ترتيب أغراضِنا. سمِعتُ من غرفتي صوتَ أطفالٍ يتنادَوْن للعب، نظرتُ من النافذة فإذا بهم قد أعدّوا بعضَ العُلَبِ الفارغة، وكُرةً صغيرةً من المطّاط، وأعلَنَ أحدُهم:</p>
-        <p style="margin-top:8px;font-weight:700;color:var(--g1)">— سنلعبُ لُعبةَ العَنْبَر!</p>
-        <p style="margin-top:6px">تجمَّعَ الأطفالُ وكان من بينهم بعضُ أقاربي، فأحبَبتُ مشاركتَهم. كنتُ خاليَ الذهن من قواعد اللُّعبة ولا أفقهُ منها شيئًا، فجلَسَ ابنُ عمّي — وكان قويًّا <span class="hakel">يافِعًا</span> — إلى جانبي وراحَ يشرحُ لي قواعدَها فيما يدُهُ ترسمُ خطوطًا على الرمل.</p>
+        <div class="pg">🎯 الفقرة الأولى — المشكلة: تغيُّر سلوك أحمد</div>
+        <p>بُكاءٌ في منتصف الليل.. إنّه صوتُ أخي الصغير <strong>أحمد</strong>، ترَكَ سريرَه باكيًا ليُكمِلَ نومَه بجانب أمّي. لقد أصبَحَ هذا <strong>دَأبَه</strong> منذ أيّامٍ قليلة. ففي المدّة القريبة الماضية أصبَحَت حالُه: <strong>خوفٌ وبُكاءٌ بالليل، صُراخٌ واندفاعٌ وفوضى عارمةٌ في أثناء النهار</strong>... لم أعهَدْه هكذا!</p>
       </div>
 
+      <!-- فقرة 2 -->
       <div class="rb">
-        <div class="pg">🎯 الفقرة الثانية — التعريف باللعبة وأبعادها وأدواتها</div>
-        <p>— تُعَدُّ لُعبةُ <strong>العنبر</strong> (أو العمبر) من أكثر الألعاب الشعبيّة العُمانيّة انتشارًا، وهي لُعبةٌ مسلّيةٌ ومُفيدةٌ في الآنِ نفسِه؛ تُريحُ النفوسَ بعد كلِّ مَشَقَّة، وتُعلِّمُ الأطفالَ <strong>التعاوُنَ والأمانةَ وسُرعةَ الحركةِ ودِقَّةَ التصويب</strong>، وتقوّي أبدانَهم وتقيهم أمراضَ الخُمولِ والكَسَل.</p>
-        <p style="margin-top:8px">— تُلعَبُ في مكانٍ مفتوحٍ مُنبَسِطٍ على شكلِ مستطيلٍ طولُه <strong>٤٠ مترًا</strong> وعرضُه <strong>٢٠ مترًا</strong> تقريبًا، ويتراوحُ عدَدُ اللاعبين في كلِّ فريقٍ بين <strong>خمسةٍ وثمانية</strong>. أما الأدوات فكُرةٌ صغيرةٌ من المطاط أو القماش، وبعضُ العُلَبِ المعدنيّة الفارغة.</p>
+        <div class="pg">🎯 الفقرة الثانية — الكشف: اكتشاف سبب التغيُّر</div>
+        <p>في اليوم التالي راقَبتُه <strong>خُلسةً</strong> وهو يلعب. فأبدى عُنفًا وتوتُّرًا غيرَ معهودَين؛ كان يرمي سيّارتَه الصغيرة باتجاه الجدار، ثم يقذِفُها برِجلِه بكلِّ قوّته فتَدحرَجُ وتنقَلِبُ عشرات المرّات لتستقرَّ على ظهرِها وقد انكسَرَت أغلبُ أجزائها.</p>
+        <p style="margin-top:8px">سألتُه مستغربةً: «لماذا تُحطِّمُ سيّارتَكَ التي تُحِبُّها، وكأنّها جزءٌ منك؟»</p>
+        <p style="margin-top:6px">فأجابَ وفي نبرتِه شعورٌ بالانتصار: «كيْ أفوزَ في اللُّعبة، فكلَّما كسَرتُ سيّاراتٍ أكثرَ حَصَلتُ على النقاط، لقد علَّمَني <strong>سعيدٌ</strong> على الجهاز كيف أقودُ سيّارتي بسرعة وأصطدمُ بالحواجز وبالسيّارات الأخرى وبالأعمدة على جانبَي الطريق.. هأنذا قد أصبحتُ بارعًا مثلَه!»</p>
+        <p style="margin-top:8px">كان عليَّ أن أفعَلَ شيئًا إزاءَ هذا الوضعِ المُنذِرِ بالخطر، أخذتُه إلى غُرفةِ أخي الثاني <strong>سعيد</strong>، فوجدتُه جالسًا أمامَ شاشة الحاسوب يلعبُ لُعبةً غريبةً وعنيفة؛ كان يُحرِّكُ — بواسطة لوحة المفاتيح — صورةَ رجلٍ مسلَّحٍ يختطفُ السيّاراتِ أو الدرّاجاتِ الناريّةَ ويقودُها بسرعة، وتُطارِدُه سيّاراتُ الشُّرطة، فيصطدمُ بالحواجز والعربات، وتعلو أصواتُ المُنبِّهات والأسلحة النارية، وكلَّما أفلَتَ وارتكَبَ شُرورًا أكثرَ حَصَلَ على نقاطٍ إضافيّة تُمكِّنُه من الذهاب إلى مرحلةٍ متقدِّمة.</p>
       </div>
 
+      <!-- فقرة 3 -->
       <div class="rb">
-        <div class="pg">🎯 الفقرة الثالثة — توجيهات اللعبة (قلب النص التوجيهي)</div>
-        <p>توجَّهَ ابنُ عمّي إلى الملعب، أجرى قُرعةً وحدَّدَ فريقًا للهجوم وآخرَ للدفاع. كُنتُ ضمنَ فريق الهجوم:</p>
+        <div class="pg">🎯 الفقرة الثالثة — المواجهة: نورة تُوجِّه سعيدًا (المقطع الإرشادي)</div>
+        <p>صُدِمتُ وأنا أُشاهِدُه مبتهِجًا بلعبتِه، ثم قلتُ مُوجِّهةً كلامي إليه:</p>
         <ul>
-          <li><strong>أَمسِكِ الكرةَ</strong> بيدِكَ اليُمنى، وعندَ الإشارةِ سَدِّدْ رميةً دقيقةً نحوَ العُلَبِ الفارغةِ لتُسقِطَها. <strong>ولا تنسَ</strong> أنَّ من حقِّكَ المحاولةَ مرَّتَين فقط.</li>
-          <li>إذا نجَحتَ في إسقاط العُلبة <strong>اهرُبْ وانتشِرْ</strong> مع زملائكَ في أرض الملعب. <strong>واحذَرْ</strong> أن تُصيبَكَ كُرةُ فريق الدفاع — فمَن تلمسُهُ الكرةُ يخرُجُ من الملعب.</li>
-          <li><strong>استخدِمْ</strong> هذه العصا أو هذه العُلبةَ الفارغةَ لتَصُدَّ بها تصويباتِ كرةِ فريق الدفاع عن جسمك.</li>
-          <li><strong>ابذُلْ قُصارى جُهدِك</strong> بمَعيَّةِ زملائكَ لإعادةِ صَفِّ العُلَبِ الفارغةِ وملئِها بالرمل.</li>
-          <li>إذا نجحتَ في إعادةِ صفِّ العُلَبِ فوقَ بعضِها <strong>فاهتِفْ «عنبَرَ!»</strong> بأعلى صوتِكَ — فتلكَ علامةُ الفوزِ بنُقطةٍ لصالح فريقِكَ.</li>
-          <li>إذا نجَحَ فريقُ الدفاع في إصابتكم بالكرة واحدًا تلو الآخر وصرتُم خارجَ الملعب — تذهبُ نقطةُ الفوزِ إليهم ويتغيَّرُ موقعُكم من الهجوم إلى الدفاع.</li>
+          <li><span class="bullet"></span><strong>العبْ، فهذا من حقِّكَ</strong> ومن حقِّ كلِّ الأطفال، لكن اختَرْ لنفسِكَ ألعابًا مفيدةً للعقل وللجسم وللروح.</li>
+          <li><span class="bullet"></span><strong>العبْ</strong>، لكن لا تجلِسِ الساعاتِ الطوالَ أمامَ هذا العالَمِ الغريبِ المُحطِّمِ للأعصاب، ولا تُدِمِ النظرَ إلى الشاشة في أثناء لعبك، فذلك يُرهِقُ العقلَ ويُقوِّسُ الظهرَ ويُضعِفُ البصر.</li>
+          <li><span class="bullet"></span><strong>العبْ</strong>، لكن لا تَغُرَّنَّكَ الانتصاراتُ الواهمة، وعباراتُ الشُّكر المَغشوشة التي تحصُلُ عليها كلَّما خالفتَ قانونًا أو حَطَّمتَ حاجزًا أو أحرقتَ سيّارةً... فهيَ تسحبُكَ إلى عالَمٍ من الفوضى، وتُبعِدُكَ عن الخيرِ والرحمة، وتُشجِّعُكَ على العنف ومخالفةِ القوانين والتعدّي على الآخرين، وتُلقي بكَ في أتون الهَلاك.</li>
+          <li><span class="bullet"></span><strong>ابحَثْ في جهازِكَ</strong> ستجِدُ ألعابًا مفيدةً وهادئةً وستجِدُ كتبًا ومعارفَ تُساعِدُكَ في دراستِكَ وتُجتازُ بكَ مراحلَ في العلم لا مراحلَ من النصر الكاذب.</li>
+          <li><span class="bullet"></span><strong>حرِّرْ نفسَكَ</strong> من هذه الجُدران، ولا تحبِسْها بحثًا عن نصرٍ زائف، وانطلِقْ بعقلِكَ وجسمِكَ وروحِكَ لترى الحياةَ بعينٍ أخرى.</li>
+          <li><span class="bullet"></span><strong>اجعَلْ إرادتَكَ تنتصر</strong> ولا تتركْها تضعُفُ أمامَ جهاز الحاسوب؛ ففي الحياة أمورٌ أخرى تستحقُّ الاهتمام كالأهل والأصدقاء والدراسة والرياضة والمطالعة.</li>
+          <li><span class="bullet"></span><strong>علِّمْ أخاكَ الصغيرَ</strong> كيف يستفيدُ من جهاز الحاسوب، ولا تَبعَثْ في قلبِهِ الصغير الرُّعبَ، ألا ترى أنَّكَ جعلتَه مَيّالًا إلى العنف والفوضى، وقد عهدناهُ لطيفًا وديعًا؟!</li>
+          <li><span class="bullet"></span><strong>وأخيرًا</strong>، اعلَمْ يا أخي أنَّ الانتصارَ يكونُ بالعمل الحقيقيِّ وليسَ بالأزرار والأوهام، أنتَ بارعٌ في العمل على الحاسوب، وعليكَ أن تستغِلَّ هذه المهارةَ في أمورٍ مفيدةٍ تعودُ عليكَ وعلى مَن حولَكَ بالنفع والخير.</li>
         </ul>
       </div>
 
+      <!-- فقرة 4 -->
       <div class="rb">
-        <div class="pg">🎯 الفقرة الرابعة — الخاتمة: قيم اللعب الحقيقي</div>
-        <p>في النهاية، اعلَمْ أنَّ الفريقَ الفائزَ هو الذي يجمعُ نقاطَ «عنبر» أكثرَ من الفريق المنافس بعد نهاية كلِّ المحاولات. لكنِ اعلَمْ أيضًا أنَّ الفوزَ ليسَ غايةً في حدِّ ذاتِه؛ بل إنَّ <strong>اللّعبَ والترفيهَ والعملَ بروحِ الفريق والتنافسَ النزيهَ والتقاربَ بين الأصدقاء</strong> هي الغاياتُ الحقيقيّة لهذه الألعاب الشعبيّة التي توارَثَتْها الأجيالُ وحافَظَت على استمرارها رغمَ انتشار الألعاب الحديثة وألعاب الفيديو.</p>
-        <p style="margin-top:8px">وبعدَ أن أنهى ابنُ عمّي الشرحَ عَمِلتُ بالتوجيهات فتذَوَّقتُ مُتعةَ اللَّعِب، وأَرَحتُ عقلي وبصري وجسمي من الألعاب الإلكترونيّة التي أبعدَتني عن المعنى الحقيقيّ للنَّشاط الرياضيّ.</p>
+        <div class="pg">🎯 الفقرة الرابعة — الخاتمة: الندم والتحوُّل</div>
+        <p>تأثَّرَ سعيدٌ بكلامي وبدا عليه الندَمُ؛ فقد أدرَكَ أنّه أضرَّ بأخيه وأهمَلَ دروسَه وصحَّتَه، وابتَعَدَ عن أُسرتِه وأصدقائه، وحَبَسَ نفسَه بين جُدران غُرفتِه يبحثُ عن <strong>نصرٍ مزيَّف</strong>.</p>
+        <p style="margin-top:8px">ثم قالَ بعدَ أن استعادَ هُدوءَه:</p>
+        <p style="margin-top:6px;padding:12px 16px;background:rgba(255,255,255,.7);border-radius:8px;border:1px dashed var(--ab);font-style:italic">«معكِ حقٌّ يا نورة، لن أحبِسَ نفسي مجدَّدًا في هذه الألعاب، سأنطلقُ إلى أهلي وأصدقائي وساحاتِ اللَّعِبِ الحقيقيِّ فقد افتقَدتُها كثيرًا.»</p>
       </div>
 
     </div>
@@ -230,20 +252,20 @@ footer{max-width:860px;margin:18px auto 30px;padding:14px 28px;background:#fff;b
   <!-- ② المفردات -->
   <div class="sec">
     <div class="sh" onclick="tog(this)">
-      <div class="sn g">٢</div>
+      <div class="sn a">٢</div>
       <span class="st">📚 المفردات الجديدة — اضغط لإظهار المعنى</span>
       <span class="sg">▼</span>
     </div>
     <div class="sb">
       <div class="vg">
-        <div class="vc" onclick="tvm(this)"><span class="vw">يافِعًا</span><span class="vh">👆 اضغط</span><span class="vm">شابًّا في مقتبل العمر، فتيًّا ونشيطًا.</span></div>
-        <div class="vc" onclick="tvm(this)"><span class="vw">مُنبَسِط</span><span class="vh">👆 اضغط</span><span class="vm">مكانٌ مستوٍ مُسطَّح خالٍ من الارتفاعات.</span></div>
-        <div class="vc" onclick="tvm(this)"><span class="vw">قُصارى جُهدِه</span><span class="vh">👆 اضغط</span><span class="vm">أقصى طاقته وأعلى مستوى من الجهد.</span></div>
-        <div class="vc" onclick="tvm(this)"><span class="vw">بمَعيَّةِ</span><span class="vh">👆 اضغط</span><span class="vm">بصُحبةِ ورُفقةِ.</span></div>
-        <div class="vc" onclick="tvm(this)"><span class="vw">تَواَرَثَتها</span><span class="vh">👆 اضغط</span><span class="vm">تناقلَتها الأجيالُ جيلًا بعد جيل.</span></div>
-        <div class="vc" onclick="tvm(this)"><span class="vw">الخُمول</span><span class="vh">👆 اضغط</span><span class="vm">الكَسَل وعدمُ الحركة والنشاط.</span></div>
-        <div class="vc" onclick="tvm(this)"><span class="vw">تَذَوَّقَ</span><span class="vh">👆 اضغط</span><span class="vm">أحَسَّ بلذّة الشيء وأدرَكَ قيمتَه.</span></div>
-        <div class="vc" onclick="tvm(this)"><span class="vw">التَّنافُس النَّزيه</span><span class="vh">👆 اضغط</span><span class="vm">التنافسُ بأخلاقٍ عاليةٍ بعيدًا عن الغشّ والتلاعب.</span></div>
+        <div class="vc" onclick="tvm(this)"><span class="vw">دَأبُه</span><span class="vh">👆 اضغط</span><span class="vm">عادتُه المستمرّة وسلوكُه المتكرِّر.</span></div>
+        <div class="vc" onclick="tvm(this)"><span class="vw">خُلسةً</span><span class="vh">👆 اضغط</span><span class="vm">بخِفيةٍ وسرٍّ دون أن يُلاحَظ.</span></div>
+        <div class="vc" onclick="tvm(this)"><span class="vw">إزاء</span><span class="vh">👆 اضغط</span><span class="vm">أمامَ وتُجاهَ وحِيالَ.</span></div>
+        <div class="vc" onclick="tvm(this)"><span class="vw">أتون الهَلاك</span><span class="vh">👆 اضغط</span><span class="vm">أتون: مكان شديد الحرارة ← المقصود: أعمق درجات الخطر والهلاك.</span></div>
+        <div class="vc" onclick="tvm(this)"><span class="vw">الانتصارات الواهمة</span><span class="vh">👆 اضغط</span><span class="vm">انتصاراتٌ وهميّةٌ وهشّة لا أساس لها في الواقع.</span></div>
+        <div class="vc" onclick="tvm(this)"><span class="vw">يختطف</span><span class="vh">👆 اضغط</span><span class="vm">يأخذ بسرعة وقوّة وبطريقة غير مشروعة.</span></div>
+        <div class="vc" onclick="tvm(this)"><span class="vw">الندَم</span><span class="vh">👆 اضغط</span><span class="vm">الأسفُ والحزنُ على فِعلٍ خاطئٍ صدَرَ منه.</span></div>
+        <div class="vc" onclick="tvm(this)"><span class="vw">فوضى عارمة</span><span class="vh">👆 اضغط</span><span class="vm">اضطرابٌ شديدٌ وتصرُّفاتٌ غير منظَّمة وعشوائيّة.</span></div>
       </div>
     </div>
   </div>
@@ -252,180 +274,226 @@ footer{max-width:860px;margin:18px auto 30px;padding:14px 28px;background:#fff;b
   <div class="sec">
     <div class="sh" onclick="tog(this)">
       <div class="sn t">٣</div>
-      <span class="st">✏️ أسئلة الكتاب — ص ٥١ إلى ٥٤</span>
+      <span class="st">✏️ أسئلة الكتاب — ص ٥٨ إلى ٦١</span>
       <span class="sg">▼</span>
     </div>
     <div class="sb">
 
       <!-- ======= أولاً: ثروتي اللغوية ======= -->
-      <div class="q-section">
-        <div class="q-label awwal">📘 أولاً: ثروتي اللُّغويّة</div>
+      <div class="q-label awwal">📘 أولاً: ثروتي اللُّغويّة</div>
 
-        <!-- س١أ -->
-        <div class="qbox">
-          <div class="qtxt"><span class="qnum t">١</span> اختَرِ الإجابةَ الصحيحةَ من بين البدائل المعطاة: <br><strong>أ)</strong> عبارةُ «لا أفقَهُ منها شيئًا» تعني:</div>
-          <div class="opts">
-            <div class="opt" onclick="mcq(this,false,'q1a')"><span class="on"></span>لا أقبَلُ منها شيئًا</div>
-            <div class="opt" onclick="mcq(this,true,'q1a')"><span class="on"></span>لا أفهَمُ منها شيئًا</div>
-            <div class="opt" onclick="mcq(this,false,'q1a')"><span class="on"></span>لا أعلَمُ إلا القليل</div>
-            <div class="opt" onclick="mcq(this,false,'q1a')"><span class="on"></span>لا أُدرِّسُ شيئًا</div>
-          </div>
-          <div class="qfb" id="q1a"></div>
+      <!-- س١أ -->
+      <div class="qbox a">
+        <div class="qtxt"><span class="qnum a">١</span> استبدِلْ بما تحتَه خطٌّ كلمةً أو عبارةً تؤدّي المعنى ذاتَه، ثم أعِدْ كتابةَ الجملة:<br>
+        <strong>أ)</strong> «لقد أصبَحَ هذا <u>دَأبَه</u> منذ أيّامٍ قليلة.»</div>
+        <button class="rbtn a" onclick="rev(this,'a1a')">💡 الإجابة النموذجية</button>
+        <div class="ans-box a" id="a1a">
+          <strong>الإجابة النموذجية</strong>
+          <p>دَأبَه = <strong>عادتَه / سلوكَه المتكرِّر</strong></p>
+          <p style="margin-top:5px">الجملة: «لقد أصبَحَ هذا <strong>عادتَه</strong> منذ أيّامٍ قليلة.»</p>
         </div>
+      </div>
 
-        <!-- س١ب -->
-        <div class="qbox">
-          <div class="qtxt"><span class="qnum t">١</span> <strong>ب)</strong> «كان قويًّا يافِعًا» — كلمةُ <strong>يافِعًا</strong> في العبارة السابقة تعني:</div>
-          <div class="opts">
-            <div class="opt" onclick="mcq(this,false,'q1b')"><span class="on"></span>سمينًا</div>
-            <div class="opt" onclick="mcq(this,false,'q1b')"><span class="on"></span>رشيقًا</div>
-            <div class="opt" onclick="mcq(this,true,'q1b')"><span class="on"></span>شابًّا</div>
-            <div class="opt" onclick="mcq(this,false,'q1b')"><span class="on"></span>صغيرًا</div>
-          </div>
-          <div class="qfb" id="q1b"></div>
+      <!-- س١ب -->
+      <div class="qbox a">
+        <div class="qtxt"><span class="qnum a">١</span> <strong>ب)</strong> «في اليوم التالي راقَبتُه <u>خُلسةً</u> وهو يلعب.»</div>
+        <button class="rbtn a" onclick="rev(this,'a1b')">💡 الإجابة النموذجية</button>
+        <div class="ans-box a" id="a1b">
+          <strong>الإجابة النموذجية</strong>
+          <p>خُلسةً = <strong>سِرًّا / بخفيةٍ / دون أن يُلاحَظ</strong></p>
+          <p style="margin-top:5px">الجملة: «في اليوم التالي راقَبتُه <strong>سِرًّا</strong> وهو يلعب.»</p>
         </div>
+      </div>
 
-        <!-- س١ج -->
-        <div class="qbox">
-          <div class="qtxt"><span class="qnum t">١</span> <strong>ج)</strong> «العملُ بروح الفريق المتنافِس النَّزيه» — كلمةُ <strong>النَّزيه</strong> تدلُّ على أنَّ الفريقَ المتنافِسَ:</div>
-          <div class="opts">
-            <div class="opt" onclick="mcq(this,true,'q1c')"><span class="on"></span>أخلاقُهُ عاليةٌ</div>
-            <div class="opt" onclick="mcq(this,false,'q1c')"><span class="on"></span>أفكارُهُ جديدةٌ</div>
-            <div class="opt" onclick="mcq(this,false,'q1c')"><span class="on"></span>عضَلاتُهُ قويّةٌ</div>
-            <div class="opt" onclick="mcq(this,false,'q1c')"><span class="on"></span>لا يَقبَلُ الخسارةَ</div>
-          </div>
-          <div class="qfb" id="q1c"></div>
+      <!-- س١ج -->
+      <div class="qbox a">
+        <div class="qtxt"><span class="qnum a">١</span> <strong>ج)</strong> «أنتَ <u>بارعٌ</u> في العمل على الحاسوب.»</div>
+        <button class="rbtn a" onclick="rev(this,'a1c')">💡 الإجابة النموذجية</button>
+        <div class="ans-box a" id="a1c">
+          <strong>الإجابة النموذجية</strong>
+          <p>بارعٌ = <strong>ماهرٌ / متمكِّنٌ / حاذقٌ</strong></p>
+          <p style="margin-top:5px">الجملة: «أنتَ <strong>ماهرٌ</strong> في العمل على الحاسوب.»</p>
         </div>
+      </div>
 
-        <!-- س٢ -->
-        <div class="qbox">
-          <div class="qtxt"><span class="qnum t">٢</span> حاكِ العبارةَ الآتيةَ محافِظًا على ما تحتَهُ خطٌّ:<br>
-          <span style="font-style:italic;color:#555">«صُفَّ العُلَبَ الفارغةَ <u>متفاديًا</u> كُراتِ الهجوم.»</span></div>
-          <button class="rbtn t" onclick="rev(this,'a2')">💡 الإجابة النموذجية</button>
-          <div class="ans-box t show" id="a2" style="display:none">
-            <strong>الإجابة النموذجية</strong>
-            <p>مثال: «اهرُبْ من الملعب <u>متفاديًا</u> كُراتِ فريق الدفاع.»</p>
-            <p style="margin-top:5px;font-size:.83rem">(يُقبَل أيُّ جملة صحيحة تحتوي على كلمة «متفاديًا» في سياقٍ مناسب)</p>
-          </div>
+      <!-- س٢ (أتون) -->
+      <div class="qbox a">
+        <div class="qtxt"><span class="qnum a">٢</span> «تُلقي بكَ في <u>أتون</u> الهَلاك» — ابحَثْ في المعجم المتاح حولَكَ عن معنى كلمة <strong>أتون</strong>.</div>
+        <button class="rbtn a" onclick="rev(this,'a2m')">💡 الإجابة النموذجية</button>
+        <div class="ans-box a" id="a2m">
+          <strong>الإجابة النموذجية</strong>
+          <p><strong>أَتُون</strong>: الفُرنُ الكبير أو المَوقِدُ الشديدُ الحرارة الذي يُستخدَمُ في الصناعة.</p>
+          <p style="margin-top:5px">في السياق: «أتون الهَلاك» تعني أشدَّ درجات الهلاك وأعمقَها، كما أنَّ الأتون لا مفرَّ منه.</p>
         </div>
-      </div><!-- /أولاً -->
+      </div>
 
       <!-- ======= ثانياً: أناقش وأحلّل ======= -->
-      <div class="q-section">
-        <div class="q-label thani">🔍 ثانياً: أناقِشُ وأُحلِّل</div>
+      <div class="q-label thani" style="margin-top:16px">🔍 ثانياً: أناقِشُ وأُحلِّل</div>
 
-        <!-- س١ (ناقش) -->
-        <div class="qbox">
-          <div class="qtxt"><span class="qnum d">١</span>
-          «نظرتُ من النافذة فإذا بهم قد أعدّوا بعضَ العُلَبِ الفارغة، وكُرةً صغيرةً من المطّاط» — في ضوء هذه العبارة أجِبْ عمّا يأتي:</div>
-          <p style="margin-top:6px;padding:10px;background:#f0faf5;border-radius:8px;font-size:.9rem">
-            <strong>أ)</strong> لماذا يُعِدُّ الأطفالُ العُلَبَ الفارغةَ وكُرةَ المطاط؟<br>
-            <strong>ب)</strong> أينَ تُلعَبُ — غالبًا — مثلُ هذه الألعاب الشعبيّة؟
-          </p>
-          <button class="rbtn d" onclick="rev(this,'a3')">💡 الإجابة النموذجية</button>
-          <div class="ans-box d" id="a3">
-            <strong>الإجابة النموذجية</strong>
-            <p><strong>أ)</strong> يُعِدُّها الأطفالُ لأنّها <strong>أدواتُ لُعبة العنبر</strong>؛ حيثُ تُستخدَمُ العُلَبُ الفارغةُ لتُصَفَّ وتُملأَ بالرمل، وتُستخدَمُ الكُرةُ للتصويب والإسقاط.</p>
-            <p style="margin-top:5px"><strong>ب)</strong> تُلعَبُ هذه الألعاب غالبًا في <strong>الأماكن المفتوحة والمُنبسطة</strong> كالساحات والأرض الرمليّة والحيّ والقرية.</p>
-          </div>
-        </div>
-
-        <!-- س٢ (فوائد) -->
-        <div class="qbox">
-          <div class="qtxt"><span class="qnum d">٢</span> ما الفائدةُ التي تحقِّقُها الألعابُ الشعبيّةُ لشخصيّة الطفل وصحّتِه كما قرأتَ في النص؟</div>
-          <table class="qtbl t">
-            <tr><th>الجانب</th><th>الفائدة من النص</th></tr>
-            <tr><td>الجانب الصحّي</td><td><button class="rbtn t" style="padding:5px 12px;font-size:.82rem" onclick="rev(this,'as2a')">اعرف الإجابة</button><div class="ans-box t" id="as2a">تقوّي الأبدان، وتقي من أمراض الخُمول والكسل، وتنمّي سُرعةَ الحركة ودِقَّةَ التصويب.</div></td></tr>
-            <tr><td>الجانب الشخصيّ</td><td><button class="rbtn t" style="padding:5px 12px;font-size:.82rem" onclick="rev(this,'as2b')">اعرف الإجابة</button><div class="ans-box t" id="as2b">تُعلِّمُ الأمانةَ والتنافسَ النزيه، وتُنمِّي روحَ المثابرة وبَذلَ القُصارى.</div></td></tr>
-            <tr><td>الجانب الاجتماعيّ</td><td><button class="rbtn t" style="padding:5px 12px;font-size:.82rem" onclick="rev(this,'as2c')">اعرف الإجابة</button><div class="ans-box t" id="as2c">تُعلِّمُ التعاوُنَ والعملَ بروح الفريق، وتُقرِّبُ بين الأصدقاء وتبني علاقات اجتماعيّة حقيقيّة.</div></td></tr>
-          </table>
-        </div>
-
-        <!-- س٣ (أقسام النص) -->
-        <div class="qbox">
-          <div class="qtxt"><span class="qnum d">٣</span> النصُّ التوجيهيُّ ينقسمُ إلى ثلاثة أقسام واضحة. انظُرْ في النص وضَعْ رقمَ القِسم أمامَ العنوان المناسب:</div>
-          <table class="qtbl t" style="margin-top:8px">
-            <tr><th>العنوان</th><th>رقم القِسم</th></tr>
-            <tr><td>انطلاقُ اللُّعبة.</td><td style="text-align:center">...</td></tr>
-            <tr><td>الإعدادُ للُّعبة.</td><td style="text-align:center">...</td></tr>
-            <tr><td>توجيهاتُ اللُّعبة.</td><td style="text-align:center">...</td></tr>
-          </table>
-          <button class="rbtn t" onclick="rev(this,'a4')">💡 الإجابة النموذجية</button>
-          <div class="ans-box t" id="a4">
-            <strong>الإجابة النموذجية</strong>
-            <table>
-              <tr><th>العنوان</th><th>رقم القِسم</th></tr>
-              <tr><td>انطلاقُ اللُّعبة</td><td style="text-align:center;font-weight:700">٣</td></tr>
-              <tr><td>الإعدادُ للُّعبة</td><td style="text-align:center;font-weight:700">١</td></tr>
-              <tr><td>توجيهاتُ اللُّعبة</td><td style="text-align:center;font-weight:700">٢</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- س٤ (جدول الأمر والنهي) -->
-        <div class="qbox">
-          <div class="qtxt"><span class="qnum d">٤</span> النصُّ التوجيهيُّ يتميَّزُ باستعمالِ أفعال الأمر والنهي. امأَلِ الجدولَ الآتيَ بهذه الأفعال الواردة في النص:</div>
-          <table class="qtbl t" style="margin-top:8px">
-            <tr><th>الأمر</th><th>النهي</th></tr>
-            <tr><td>أَمسِكِ الكرةَ...</td><td>ولا تنسَ أنَّ من حقِّكَ المحاولة مرَّتين فقط...</td></tr>
-            <tr><td>...</td><td>...</td></tr>
-            <tr><td>...</td><td>...</td></tr>
-          </table>
-          <button class="rbtn t" onclick="rev(this,'a5')">💡 الإجابة النموذجية</button>
-          <div class="ans-box t" id="a5">
-            <strong>الإجابة النموذجية</strong>
-            <table>
-              <tr><th>أفعال الأمر</th><th>أفعال النهي</th></tr>
-              <tr><td>أَمسِكِ الكرةَ</td><td>لا تنسَ أنَّ من حقِّكَ المحاولةَ مرَّتَين</td></tr>
-              <tr><td>سَدِّدْ رميةً دقيقةً</td><td>واحذَرْ أن تُصيبَكَ كُرةُ فريق الدفاع</td></tr>
-              <tr><td>اهرُبْ — انتشِرْ</td><td>—</td></tr>
-              <tr><td>استخدِمْ هذه العصا</td><td>—</td></tr>
-              <tr><td>ابذُلْ قُصارى جُهدِك</td><td>—</td></tr>
-              <tr><td>اهتِفْ «عنبَرَ!»</td><td>—</td></tr>
-              <tr><td>اعلَمْ (مرّتان)</td><td>—</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- س٥ (الألعاب الشعبية والانقراض) -->
-        <div class="qbox">
-          <div class="qtxt"><span class="qnum d">٥</span> «تُعَدُّ الألعابُ الشعبيّةُ جزءًا من تراث كلِّ شعب، وتتميَّزُ سلطنةُ عُمانَ بعدد كبير من الألعاب الشعبيّة، لكنّها مهدَّدةٌ بالانقراض مع مرور الأيام.»<br>في ضوء العبارة السابقة <strong>أبدِ رأيَكَ</strong> في كيفيّة المحافظة على هذه الألعاب والتشجيع على ممارستها.</div>
-          <button class="rbtn t" onclick="rev(this,'a6')">💡 إجابة نموذجية مقترحة</button>
-          <div class="ans-box t" id="a6">
-            <strong>إجابة مفتوحة — نموذج للإجابة</strong>
-            <ul>
-              <li>إدراجُ الألعاب الشعبيّة في حصص التربية الرياضيّة بالمدارس.</li>
-              <li>تنظيمُ مهرجاناتٍ ومسابقاتٍ سنويّة للألعاب الشعبيّة العُمانيّة.</li>
-              <li>توثيقُ هذه الألعاب في كتب ومقاطع مرئيّة وتوزيعها على الأجيال الجديدة.</li>
-              <li>تشجيعُ الأهل على تعليم أبنائهم هذه الألعاب في البيت والحيّ.</li>
-            </ul>
-          </div>
-        </div>
-      </div><!-- /ثانياً -->
-
-      <!-- ======= ثالثاً: أتوسَّع ======= -->
-      <div class="q-section">
-        <div class="q-label" style="background:var(--rose)">📊 ثالثاً: أتوسَّع</div>
-
-        <div class="qbox">
-          <div class="qtxt"><span class="qnum r">٦</span> وازِنْ مع زملائكَ بين لُعبتَين إحداهما شعبيّة وأخرى حديثة، وحدِّدْ إيجابيّاتِ كلِّ لُعبةٍ وسلبيّاتِها.</div>
-          <button class="rbtn r" onclick="rev(this,'a7')">💡 الإجابة النموذجية</button>
-          <div class="ans-box r" id="a7">
-            <strong>نموذج المقارنة (لُعبة العنبر × لُعبة إلكترونيّة)</strong>
-            <div class="cmp-wrap">
-              <table class="cmp">
-                <tr><th>المعيار</th><th>لُعبة العنبر (شعبيّة)</th><th>لُعبة إلكترونيّة</th></tr>
-                <tr><td>الصحّة البدنيّة</td><td class="plus">✔ تُقوِّي الجسم</td><td class="minus">✘ جلوسٌ مطوَّل</td></tr>
-                <tr><td>التواصل الاجتماعيّ</td><td class="plus">✔ يبني صداقات حقيقيّة</td><td class="minus">✘ عزلة وانطواء</td></tr>
-                <tr><td>روح الفريق</td><td class="plus">✔ تعاوُن ميدانيّ</td><td class="minus">✘ فرديّة غالبًا</td></tr>
-                <tr><td>الحفاظ على التراث</td><td class="plus">✔ يصون الهُويّة</td><td class="minus">✘ لا صلة بالتراث</td></tr>
-                <tr><td>الأمان</td><td class="minus">✘ خطر إصابات</td><td class="plus">✔ آمنة جسديًّا</td></tr>
-                <tr><td>المحتوى</td><td class="plus">✔ قيم وأخلاق</td><td class="minus">✘ قد يحتوي عنفًا</td></tr>
-              </table>
+      <!-- س١ (أعراض أحمد) -->
+      <div class="qbox t">
+        <div class="qtxt"><span class="qnum t">١</span> اذكُرِ الأعراضَ التي أصبَحَ يُعاني منها أحمدُ في الأيام القليلة الماضية:</div>
+        <button class="rbtn t" onclick="rev(this,'a3')">💡 الإجابة النموذجية</button>
+        <div class="ans-box t" id="a3">
+          <strong>الإجابة النموذجية</strong>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px">
+            <div style="background:#1a2e4a;color:#fff;border-radius:8px;padding:10px">
+              <span style="display:block;font-size:.78rem;font-weight:800;color:#ffd580;margin-bottom:5px;text-align:center">🌙 في أثناء الليل</span>
+              <ul style="padding-right:16px;font-size:.88rem;line-height:1.8">
+                <li>خوفٌ وبُكاءٌ</li>
+                <li>ترَكَ سريرَه ونامَ بجانب أمّه</li>
+              </ul>
+            </div>
+            <div style="background:#fff3e0;border-radius:8px;padding:10px">
+              <span style="display:block;font-size:.78rem;font-weight:800;color:var(--a1);margin-bottom:5px;text-align:center">☀️ في أثناء النهار</span>
+              <ul style="padding-right:16px;font-size:.88rem;line-height:1.8;color:var(--navy)">
+                <li>صُراخٌ واندفاعٌ</li>
+                <li>فوضى عارمة</li>
+                <li>عُنفٌ وتوتُّرٌ (تحطيم سيّارتِه)</li>
+              </ul>
             </div>
           </div>
         </div>
-      </div><!-- /ثالثاً -->
+      </div>
+
+      <!-- س٢ (السبب الحقيقي) -->
+      <div class="qbox t">
+        <div class="qtxt"><span class="qnum t">٢</span> اكتَشَفَت نورةُ السببَ الحقيقيَّ وراءَ تغيُّر سلوك أخيها أحمد. اقرأْ من النص الفقرةَ الدالّةَ على ذلك.</div>
+        <button class="rbtn t" onclick="rev(this,'a4')">💡 الإجابة النموذجية</button>
+        <div class="ans-box t" id="a4">
+          <strong>الفقرة الدالّة على السبب</strong>
+          <p style="font-style:italic;border-right:3px solid var(--teal);padding-right:10px;margin-top:6px">«فأجابَ وفي نبرتِه شعورٌ بالانتصار: كيْ أفوزَ في اللُّعبة، فكلَّما كسَرتُ سيّاراتٍ أكثرَ حَصَلتُ على النقاط، لقد علَّمَني سعيدٌ على الجهاز كيف أقودُ سيّارتي بسرعة...»</p>
+          <p style="margin-top:8px"><strong>السبب:</strong> الألعابُ الإلكترونيّةُ العنيفةُ التي علَّمَها سعيدٌ لأحمد أثَّرَت على سلوكِه ونقلَت إليه العُنفَ والفوضى.</p>
+        </div>
+      </div>
+
+      <!-- س٣ (بطولية) -->
+      <div class="qbox t">
+        <div class="qtxt"><span class="qnum t">٣</span> وردَت في الفقرة الرابعة عبارةُ «تُرافقُه عباراتُ الشُّكر والتشجيع على كلِّ ما أنجَزَه من أعمالٍ (بطوليّة)» — ما رأيُكَ في وصفِ أعمالِ سعيد بأنّها بطوليّة؟</div>
+        <button class="rbtn t" onclick="rev(this,'a5')">💡 الإجابة النموذجية</button>
+        <div class="ans-box t" id="a5">
+          <strong>الإجابة النموذجية</strong>
+          <p>وصفُ هذه الأعمال بـ «البطوليّة» هو وصفٌ <strong>ساخرٌ وغيرُ حقيقيّ</strong>؛ لأنَّ ما يفعلُه سعيدٌ في اللُّعبة من اختطافٍ للسيّارات وتحطيمٍ للحواجز ومخالفةٍ للقانون ليسَ بطولةً في الواقع، بل هو سلوكٌ مرفوضٌ ومُجرَّمٌ. الكلمة وردَت بين أقواسٍ للدلالة على السخريةِ والاستنكار.</p>
+        </div>
+      </div>
+
+      <!-- س٤أ (جدول أمر ونهي) -->
+      <div class="qbox t">
+        <div class="qtxt"><span class="qnum t">٤</span> <strong>أ)</strong> قدَّمَت نورةُ جُملةً من الإرشادات لأخيها سعيد لكي يُحسِنَ استخدامَ الحاسوب. <br>صنِّفِ الأفعالَ المستعمَلةَ في الإرشادات بحسب الجدول:</div>
+        <button class="rbtn t" onclick="rev(this,'a6a')">💡 الإجابة النموذجية</button>
+        <div class="ans-box t" id="a6a">
+          <strong>الإجابة النموذجية</strong>
+          <table>
+            <tr><th style="background:var(--green)">أفعال الأمر</th><th style="background:var(--rose)">أفعال النهي</th></tr>
+            <tr><td>العبْ (×٣)</td><td>لا تجلِسِ الساعاتِ الطوال</td></tr>
+            <tr><td>اختَرْ لنفسِكَ ألعابًا مفيدةً</td><td>لا تُدِمِ النظرَ إلى الشاشة</td></tr>
+            <tr><td>ابحَثْ في جهازِكَ</td><td>لا تَغُرَّنَّكَ الانتصاراتُ الواهمة</td></tr>
+            <tr><td>حرِّرْ نفسَكَ من هذه الجُدران</td><td>لا تحبِسْها بحثًا عن نصرٍ زائف</td></tr>
+            <tr><td>اجعَلْ إرادتَكَ تنتصر</td><td>لا تتركْها تضعُفُ أمامَ الجهاز</td></tr>
+            <tr><td>علِّمْ أخاكَ الصغير</td><td>لا تَبعَثْ في قلبِه الرُّعبَ</td></tr>
+            <tr><td>اعلَمْ / استغِلَّ مهارتَكَ</td><td>—</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- س٤ب (سبب ونتيجة) -->
+      <div class="qbox t">
+        <div class="qtxt"><span class="qnum t">٤</span> <strong>ب)</strong> أكمِلِ السببَ أو النتيجةَ في الجدول الآتي:</div>
+        <button class="rbtn t" onclick="rev(this,'a6b')">💡 الإجابة النموذجية</button>
+        <div class="ans-box t" id="a6b">
+          <strong>الإجابة النموذجية</strong>
+          <table>
+            <tr><th style="background:var(--a2)">الأسباب</th><th style="background:var(--teal)">النتائج</th></tr>
+            <tr><td>إدمانُ الجلوسِ الطويل أمامَ الشاشة</td><td class="filled">إرهاقُ العقل، وتقوُّسُ الظهر، وإضعافُ البصر</td></tr>
+            <tr><td class="filled">اللعبُ العنيفُ الذي يُكافئ على مخالفة القانون</td><td>مخالفةُ القانون — تحطيمُ حاجز — إحراقُ سيّارة</td></tr>
+            <tr><td>استخدامُ الحاسوبِ استخدامًا صحيحًا مفيدًا</td><td class="filled">اجتيازُ مراحلَ في العلم</td></tr>
+            <tr><td>تحريرُ النفس من الجُدران والانطلاق للحياة</td><td class="filled">رؤيةُ الحياة بعينٍ أخرى والتحرُّر من الإدمان</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- س٥ (تصنيف العنوان) -->
+      <div class="qbox t">
+        <div class="qtxt"><span class="qnum t">٥</span> عنوانُ النص «نصرٌ زائف» — <strong>أ)</strong> كيف تُصنِّفُ هذا العنوان؟ (اختَرْ ما تراهُ الأقربَ)</div>
+        <div class="opts">
+          <div class="opt" onclick="mcq(this,true,'q5a')"><span class="dot"></span>عنوانٌ يُلخِّصُ مضمونَ النص</div>
+          <div class="opt" onclick="mcq(this,false,'q5a')"><span class="dot"></span>عنوانٌ غامضٌ لكنّه شائق</div>
+          <div class="opt" onclick="mcq(this,false,'q5a')"><span class="dot"></span>عنوانٌ لا علاقةَ له بالنص</div>
+          <div class="opt" onclick="mcq(this,false,'q5a')"><span class="dot"></span>عنوانٌ جامدٌ لا يُشجِّعُ على القراءة</div>
+        </div>
+        <div class="qfb" id="q5a"></div>
+      </div>
+
+      <!-- س٥ب (اقترح عنوانًا) -->
+      <div class="qbox t">
+        <div class="qtxt"><span class="qnum t">٥</span> <strong>ب)</strong> اقترِحْ عنوانًا آخرَ للنص، مُبيِّنًا سببَ الاختيار:</div>
+        <button class="rbtn t" onclick="rev(this,'a7')">💡 إجابة نموذجية مقترحة</button>
+        <div class="ans-box t" id="a7">
+          <strong>إجابة مفتوحة — نموذج</strong>
+          <p><strong>العنوان المقترح:</strong> «حين استيقَظَ سعيد» أو «وراءَ الشاشة» أو «الانتصار الحقيقيّ».</p>
+          <p style="margin-top:5px"><strong>السبب:</strong> لأنَّ القصّة تدور حول صحوة سعيد وإدراكِه للحقيقة وعودتِه إلى الحياة الواقعيّة بعيدًا عن وهم الألعاب الإلكترونيّة.</p>
+        </div>
+      </div>
+
+      <!-- س٦ (تقسيم النص) -->
+      <div class="qbox t">
+        <div class="qtxt"><span class="qnum t">٦</span> ينقسمُ النصُّ إلى ثلاثة أجزاء. عيِّنْ حدودَها في النص وفقَ الآتي:<br>
+        <span style="font-size:.85rem;color:#666">• مقدِّمة: من ـــ إلى&nbsp;&nbsp;|&nbsp;&nbsp;• مقطعٌ إرشاديّ: من ـــ إلى&nbsp;&nbsp;|&nbsp;&nbsp;• خاتمة: من ـــ إلى</span></div>
+        <button class="rbtn t" onclick="rev(this,'a8')">💡 الإجابة النموذجية</button>
+        <div class="ans-box t" id="a8">
+          <strong>الإجابة النموذجية</strong>
+          <table>
+            <tr><th style="background:var(--navy)">الجزء</th><th style="background:var(--teal)">الحدود</th><th style="background:var(--a2)">المضمون</th></tr>
+            <tr><td><strong>المقدِّمة</strong></td><td>من «بُكاءٌ في منتصف الليل» → إلى «لم أعهَدْه هكذا»</td><td>عرضُ المشكلة وتغيُّر أحمد</td></tr>
+            <tr><td><strong>المقطع الإرشادي</strong></td><td>من «في اليوم التالي» → إلى «وأخيرًا اعلَمْ يا أخي»</td><td>الكشفُ عن السبب وإرشادات نورة</td></tr>
+            <tr><td><strong>الخاتمة</strong></td><td>من «تأثَّرَ سعيدٌ بكلامي» → إلى نهاية النص</td><td>الندمُ وقرارُ التغيير</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- س٧ (الألعاب المفضّلة) -->
+      <div class="qbox t">
+        <div class="qtxt"><span class="qnum t">٧</span> الألعابُ الإلكترونيّةُ تستهوي العديدَ من الأطفال — ما الألعابُ التي تُحِبُّها أكثرَ؟ ولماذا؟</div>
+        <button class="rbtn t" onclick="rev(this,'a9')">💡 إجابة نموذجية مقترحة</button>
+        <div class="ans-box t" id="a9">
+          <strong>إجابة مفتوحة — نموذج</strong>
+          <p>أُفضِّلُ الألعابَ الواقعيّةَ الجماعيّةَ كالكرةِ والعدوِ والسباحة، لأنّها تُقوِّي جسمي وتبني صداقاتٍ حقيقيّةً وتُنمِّي روحَ التعاون، على عكس الألعاب الإلكترونيّة التي تجعلُني أجلسُ منفردًا لساعاتٍ طويلة.</p>
+          <p style="font-size:.83rem;color:#666;margin-top:4px">(يُقبَل كلُّ جواب معقول مدعوم بحُجج)</p>
+        </div>
+      </div>
+
+      <!-- ======= ثالثاً: أتوسّع ======= -->
+      <div class="q-label" style="background:var(--rose);margin-top:16px">📊 ثالثاً: أتوسَّع</div>
+
+      <!-- س (الموازنة) -->
+      <div class="qbox r">
+        <div class="qtxt"><span class="qnum r">أ</span> وازِنْ بين ممارسة لعبة كرة القدم واقعيًّا وممارستها إلكترونيًّا من حيث: السهولة — التواصل وتكوين الصداقات — النشاط البدنيّ — التفاعل والتعاون الجماعيّ — تعزيز الذكاء.</div>
+        <button class="rbtn r" onclick="rev(this,'a10')">💡 الإجابة النموذجية</button>
+        <div class="ans-box r" id="a10">
+          <strong>جدول الموازنة</strong>
+          <div style="overflow-x:auto">
+            <table style="width:100%;border-collapse:collapse;font-size:.87rem;margin-top:6px">
+              <tr><th style="padding:7px;background:var(--navy);color:#fff;text-align:center">المعيار</th><th style="padding:7px;background:var(--green);color:#fff;text-align:center">واقعيًّا ⚽</th><th style="padding:7px;background:var(--rose);color:#fff;text-align:center">إلكترونيًّا 🎮</th></tr>
+              <tr><td style="padding:7px;border:1px solid #e0c8c8">السهولة</td><td style="padding:7px;border:1px solid #e0c8c8;color:var(--rose)">تحتاج أرضًا وكرةً ولاعبين</td><td style="padding:7px;border:1px solid #e0c8c8;color:var(--green)">سهلةٌ في أي مكان وزمان</td></tr>
+              <tr><td style="padding:7px;border:1px solid #e0c8c8">التواصل والصداقات</td><td style="padding:7px;border:1px solid #e0c8c8;color:var(--green)">يبني صداقاتٍ حقيقيّة دائمة</td><td style="padding:7px;border:1px solid #e0c8c8;color:var(--rose)">تواصلٌ افتراضيٌّ محدود</td></tr>
+              <tr><td style="padding:7px;border:1px solid #e0c8c8">النشاط البدنيّ</td><td style="padding:7px;border:1px solid #e0c8c8;color:var(--green)">يُقوِّي الجسمَ كاملًا</td><td style="padding:7px;border:1px solid #e0c8c8;color:var(--rose)">جلوسٌ مطوَّلٌ يضرُّ الجسم</td></tr>
+              <tr><td style="padding:7px;border:1px solid #e0c8c8">التفاعل الجماعيّ</td><td style="padding:7px;border:1px solid #e0c8c8;color:var(--green)">تعاوُنٌ ميدانيٌّ حقيقيّ</td><td style="padding:7px;border:1px solid #e0c8c8;color:var(--rose)">فرديّةٌ أو تعاونٌ رقميّ</td></tr>
+              <tr><td style="padding:7px;border:1px solid #e0c8c8">تعزيز الذكاء</td><td style="padding:7px;border:1px solid #e0c8c8;color:var(--green)">تفكيرٌ تكتيكيٌّ سريع</td><td style="padding:7px;border:1px solid #e0c8c8;color:var(--green)">ذكاءٌ رقميٌّ واستراتيجيّ</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- س (أتلعب...) -->
+      <div class="qbox r">
+        <div class="qtxt"><span class="qnum r">ب</span> أتلعبُ في محيطِكَ ألعابًا واقعيّةً حقيقيّةً أم ألعابًا افتراضيّةً إلكترونيّةً؟ ولماذا؟</div>
+        <button class="rbtn r" onclick="rev(this,'a11')">💡 إجابة نموذجية مقترحة</button>
+        <div class="ans-box r" id="a11">
+          <strong>إجابة مفتوحة — نموذج</strong>
+          <p>أُفضِّلُ الألعابَ الواقعيّةَ الحقيقيّة؛ لأنّها تُتيحُ لي التواصلَ المباشرَ مع أصدقائي وتُحرِّكُ جسمي وتُنمِّي روحَ المنافسة الشريفة. أمّا الألعابُ الإلكترونيّةُ فأُمارِسُها باعتدالٍ، مُتجنِّبًا الألعابَ العنيفة.</p>
+          <p style="font-size:.83rem;color:#888;margin-top:4px">(يُقبَل كلُّ جواب معقول)</p>
+        </div>
+      </div>
 
     </div>
   </div><!-- /sec أسئلة -->
@@ -433,18 +501,18 @@ footer{max-width:860px;margin:18px auto 30px;padding:14px 28px;background:#fff;b
   <!-- ④ المواطنة الصالحة -->
   <div class="sec">
     <div class="sh" onclick="tog(this)">
-      <div class="sn d">٤</div>
+      <div class="sn g">٤</div>
       <span class="st">🌍 ربط الدرس بالمواطنة الصالحة</span>
       <span class="sg">▼</span>
     </div>
     <div class="sb">
       <div class="cbox">
-        <div class="ctit">🏅 ما يتعلّمه المواطن الصالح من لُعبة العنبر</div>
-        <div class="cp"><span class="ci">🏛️</span><div class="ct"><strong>الحفاظ على التراث العُماني</strong>الألعاب الشعبيّة إرثٌ حضاريٌّ توارثَتهُ الأجيال — المواطن الصالح يصونُهُ ويُعرِّفُ به.</div></div>
-        <div class="cp"><span class="ci">🤝</span><div class="ct"><strong>التعاون وروح الفريق</strong>المواطن الصالح يتعاون مع مجتمعه لتحقيق الأهداف المشتركة كما في لُعبة العنبر الجماعيّة.</div></div>
-        <div class="cp"><span class="ci">⚖️</span><div class="ct"><strong>الأمانة والتنافس النزيه</strong>المواطن الصالح يتنافسُ بصدقٍ وشفافيّةٍ دون غشٍّ أو تلاعب.</div></div>
-        <div class="cp"><span class="ci">💪</span><div class="ct"><strong>الاهتمام بالصحة البدنيّة</strong>الجسمُ السليم أداةٌ لخدمة الوطن — ممارسةُ الرياضة واجبٌ وطنيٌّ وصحّيٌّ.</div></div>
-        <div class="cp"><span class="ci">👨‍👩‍👧‍👦</span><div class="ct"><strong>التواصل الأسري والاجتماعيّ</strong>الألعاب الشعبيّة تجمع الأسر وتعزّز الروابط الاجتماعيّة — أساس المجتمع المتماسك.</div></div>
+        <div class="ctit">🏅 ما يتعلّمه المواطن الصالح من «نصر زائف»</div>
+        <div class="cp"><span class="ci">🧠</span><div class="ct"><strong>استخدام التقنية بوعي ومسؤوليّة</strong>المواطن الصالح يستخدم التكنولوجيا أداةً للتعلّم والإنجاز، لا وسيلةً للإدمان والهروب من الواقع.</div></div>
+        <div class="cp"><span class="ci">👨‍👩‍👦</span><div class="ct"><strong>المسؤوليّة الأسريّة</strong>المواطن الصالح يحرص على أفراد أُسرته ويدركُ أثرَ تصرّفاته عليهم كما فَعَلَت نورة حين تدخَّلَت لحماية أحمد.</div></div>
+        <div class="cp"><span class="ci">🎯</span><div class="ct"><strong>السعي للإنجاز الحقيقي</strong>المواطن المُنتِج يسعى إلى نجاحاتٍ حقيقيّة في دراسته وعمله، ولا يُضيع وقتَه في انتصاراتٍ وهميّة.</div></div>
+        <div class="cp"><span class="ci">🌱</span><div class="ct"><strong>الإرادة والانضباط الذاتي</strong>المواطن القوي يملك إرادةً تُحكِّمُه في وقته؛ فلا تقودُه الشاشاتُ إلى إهمال واجباته نحو نفسِه وأُسرته.</div></div>
+        <div class="cp"><span class="ci">🔄</span><div class="ct"><strong>الاعتراف بالخطأ والتصحيح</strong>سعيدٌ حين أدرَكَ خطأَه رجَعَ فورًا عن تصرُّفِه — وهذه صفةٌ أساسيّة في المواطن المسؤول.</div></div>
       </div>
     </div>
   </div>
@@ -453,11 +521,11 @@ footer{max-width:860px;margin:18px auto 30px;padding:14px 28px;background:#fff;b
 
 <!-- FOOTER -->
 <footer>
-  <div class="ft-logo">🎓</div>
+  <div style="font-size:1.6rem">🎓</div>
   <div>
     <div class="ft-name">👨‍🏫 الأستاذ خليل البلوشي</div>
     <div class="ft-info">معلم اللغة العربية | الصف الخامس | مدرسة سعد بن معاذ للتعليم الأساسي</div>
-    <div class="ft-info">المحور الخامس: رياضتي وصحّتي | الفصل الدراسي الثاني 2024-2025م</div>
+    <div class="ft-info">المحور الخامس: رياضتي وصحّتي | الدرس الثاني | الفصل الدراسي الثاني 2024-2025م</div>
   </div>
   <div style="text-align:center">
     <div style="font-size:.75rem;color:#bbb">لغتي الجميلة 🇴🇲</div>
